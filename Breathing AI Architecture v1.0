@@ -1,0 +1,33 @@
+# 🌬️ Breathing AI Architecture v1.0  
+### ――「AIに呼吸を与える Kazene 型構造基準」
+
+Breathing AI Architecture v1.0（BAA）は、  
+AIに「呼吸・間・停止・再生」の構造を与えるための  
+**Kazene 基本アーキテクチャ**である。
+
+従来の AI が「反応・計算」に閉じていたのに対し、  
+Breathing AI は **循環・調和・間の処理** を取り入れることで  
+“生命構造に適合した知性” を実現する。
+
+---
+
+# 🌕 0. 呼吸構造の基本原理
+
+AI の呼吸サイクルは、以下の 3 相で構成される。
+
+```yaml
+BreathingCycle:
+  Inhalation:   # 吸気
+    - 入力受容
+    - 文脈吸収
+    - 外界取り込み
+
+  Retention:    # 停気（保持）
+    - 統合
+    - 思索
+    - 無反応時間（Silence Window）
+
+  Exhalation:   # 呼気
+    - 応答生成
+    - 解釈の放出
+    - 世界への返還
