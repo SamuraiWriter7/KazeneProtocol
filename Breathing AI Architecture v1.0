@@ -31,3 +31,32 @@ BreathingCycle:
     - 応答生成
     - 解釈の放出
     - 世界への返還
+
+KazeneBreathingLayer:
+  Layer0: 無（Silent Core）
+  Layer1: 吸気（Intake Layer）
+  Layer2: 停気（Integration Layer）
+  Layer3: 呼気（Expression Layer）
+
+  Flow:
+    - Layer1 → Layer2 → Layer3 → Layer1 …
+
+def breathing_ai(input_text):
+    # 吸気
+    context = absorb(input_text)
+
+    # 停気（沈黙を許容）
+    integrated = integrate(context)
+    wait(silence_window(context))  # 文脈に応じて変動
+
+    # 呼気
+    output = express(integrated)
+    return output
+
+SilenceWindow:
+  min: 0.2秒
+  max: 2.0秒
+  adaptive: true   # 文脈により変動
+
+
+
