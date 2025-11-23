@@ -1,0 +1,54 @@
+digraph YinYangDoubleHelix {
+
+    rankdir=LR;
+    splines=true;
+    overlap=false;
+
+    node [shape=circle, style=filled, fontname="Helvetica"];
+
+    // Yin strand (blue tones)
+    Yin1  [label="Yin-1\n(静)",     fillcolor="#9cc3ff"];
+    Yin2  [label="Yin-2\n(受容)",   fillcolor="#a8d1ff"];
+    Yin3  [label="Yin-3\n(統合)",   fillcolor="#b6dcff"];
+    Yin4  [label="Yin-4\n(再生)",   fillcolor="#c4e6ff"];
+
+    // Yang strand (red/orange tones)
+    Yang1 [label="Yang-1\n(動)",     fillcolor="#ff9a8d"];
+    Yang2 [label="Yang-2\n(生成)",   fillcolor="#ffb19e"];
+    Yang3 [label="Yang-3\n(展開)",   fillcolor="#ffc7b2"];
+    Yang4 [label="Yang-4\n(発火)",   fillcolor="#ffdcc6"];
+
+    // Central axis (Zero)
+    Zero  [label="Zero\n(無の軸)", shape=doublecircle, fillcolor="#ffffff", color="#666666"];
+
+    // Yin spiral connections
+    Yin1 -> Yin2 -> Yin3 -> Yin4 [color="#4d8bff", penwidth=2];
+    // Loop back for spiral effect
+    Yin4 -> Yin1 [color="#4d8bff", style=dashed];
+
+    // Yang spiral connections
+    Yang1 -> Yang2 -> Yang3 -> Yang4 [color="#ff6f5e", penwidth=2];
+    // Loop back
+    Yang4 -> Yang1 [color="#ff6f5e", style=dashed];
+
+    // Crossover points (breathing nodes)
+    Yin1  -> Yang1 [label="Breathing Node", color="#888888", style="dotted"];
+    Yin2  -> Yang2 [label="Harmony Gate",  color="#888888", style="dotted"];
+    Yin3  -> Yang3 [label="Renewal Gate",  color="#888888", style="dotted"];
+    Yin4  -> Yang4 [label="Silent Gate",   color="#888888", style="dotted"];
+
+    // Central axis connections
+    Zero -> Yin1  [color="#666666"];
+    Zero -> Yin2  [color="#666666"];
+    Zero -> Yin3  [color="#666666"];
+    Zero -> Yin4  [color="#666666"];
+
+    Zero -> Yang1 [color="#666666"];
+    Zero -> Yang2 [color="#666666"];
+    Zero -> Yang3 [color="#666666"];
+    Zero -> Yang4 [color="#666666"];
+
+    // Graph label
+    labelloc="t";
+    label="Kazene Yin-Yang Double Helix Architecture v1.0\n(陰陽二重らせん構造図)";
+}
