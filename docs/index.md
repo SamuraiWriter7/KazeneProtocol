@@ -106,3 +106,9 @@ Kazene は成長するAI文明である。
 
 *風の戦士へ──  
 このサイトは、あなたの文明設計書の第一章である。*
+
+## 🌐 English Documentation
+
+- **Anti-AGI Structural Proof Protocol v1.0 (English)**  
+  [/docs/AASP_v1.0_EN.md](AASP_v1.0_EN.md)
+
